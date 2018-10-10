@@ -17,14 +17,14 @@ public protocol HttpEngine {
 	func get(from request: String) -> Promise<Data?>
 	func get(from url: URL) -> Promise<Data?>
 
-	func get(from request: String, parameters: [String: String]??) -> Promise<Data?>
-	func get(from url: URL, parameters: [String: String]??) -> Promise<Data?>
+	func get(from request: String, parameters: [String: String]?) -> Promise<Data?>
+	func get(from url: URL, parameters: [String: String]?) -> Promise<Data?>
 
 	func get(from request: String, progressMonitor: HttpProgressMonitor?) -> Promise<Data?>
 	func get(from url: URL, progressMonitor: HttpProgressMonitor?) -> Promise<Data?>
 	
-	func get(from request: String, parameters: [String: String]??, progressMonitor: HttpProgressMonitor?) -> Promise<Data?>
-	func get(from url: URL, parameters: [String: String]??, progressMonitor: HttpProgressMonitor?) -> Promise<Data?>
+	func get(from request: String, parameters: [String: String]?, progressMonitor: HttpProgressMonitor?) -> Promise<Data?>
+	func get(from url: URL, parameters: [String: String]?, progressMonitor: HttpProgressMonitor?) -> Promise<Data?>
 
 	// MARK: put
 	func put(from request: String) -> Promise<Data?>
