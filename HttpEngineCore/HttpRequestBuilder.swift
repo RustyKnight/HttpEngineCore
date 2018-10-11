@@ -71,7 +71,7 @@ open class BaseHttpRequestBuilder: HttpRequestBuilder {
 		return self
 	}
 	
-	public func build() throws -> HttpEngine {
+	open func build() throws -> HttpEngine {
 		fatalError("Not yet implemented")
 	}
 	
