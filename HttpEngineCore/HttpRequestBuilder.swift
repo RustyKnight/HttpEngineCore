@@ -37,7 +37,7 @@ public protocol HttpRequestBuilder {
 	var url: URL { get }
 	
 	func with(parameters: [String: String]) -> Self
-	func with(header: [String: String]) -> Self
+	func with(headers: [String: String]) -> Self
 	func with(credentials: Credentials) -> Self
 	func with(progressMonitor: @escaping ProgressMonitor) -> Self
 	
@@ -48,7 +48,7 @@ open class BaseHttpRequestBuilder: HttpRequestBuilder {
 	
 	public let url: URL
 	public var parameters: [String: String]?
-	public var header: [String: String]?
+	public var headers: [String: String]?
 	public var credentials: Credentials?
 	public var progressMonitor: ProgressMonitor?
 	
@@ -61,7 +61,7 @@ open class BaseHttpRequestBuilder: HttpRequestBuilder {
 		return self
 	}
 	
-	public func with(header: [String : String]) -> Self {
+	public func with(headers: [String : String]) -> Self {
 		self.header = header
 		return self
 	}
