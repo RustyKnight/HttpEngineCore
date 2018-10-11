@@ -62,7 +62,7 @@ open class BaseHttpRequestBuilder: HttpRequestBuilder {
 	}
 	
 	public func with(headers: [String : String]) -> Self {
-		self.header = header
+		self.headers = headers
 		return self
 	}
 	
