@@ -35,6 +35,8 @@ public protocol HttpRequestBuilder {
 	func with(header: [String: String]) -> Self
 	func with(credentials: Credentials) -> Self
 	func with(progressMonitor: @escaping ProgressMonitor) -> Self
+	
+	func build() throws -> HttpEngine
 }
 
 open class BaseHttpRequestBuilder: HttpRequestBuilder {
@@ -67,7 +69,10 @@ open class BaseHttpRequestBuilder: HttpRequestBuilder {
 	public func with(progressMonitor: @escaping ProgressMonitor) -> Self {
 		self.progressMonitor = progressMonitor
 		return self
-
+	}
+	
+	public func build() throws -> HttpEngine {
+		fatalError("Not yet implemented")
 	}
 	
 	
