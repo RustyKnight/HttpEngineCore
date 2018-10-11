@@ -11,6 +11,11 @@ import Hydra
 
 public typealias ProgressMonitor = (Double) -> Void
 
+// Oppurtunity for dependency injection
+public protocol HttpRequestBuilderFactory {
+	func request(to: URL) -> HttpRequestBuilder
+}
+
 public protocol Credentials {
 	var userName: String { get }
 	var password: String { get }
