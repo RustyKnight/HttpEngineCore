@@ -15,6 +15,7 @@ public protocol HttpEngine {
 	
 	// MARK: get
 	func get() -> Promise<Data?>
+	func get(data: Data) -> Promise<Data?>
 
 	// MARK: put
 	func put(data: Data) -> Promise<Data?>
