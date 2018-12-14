@@ -8,14 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		7071AE2C216F39EF00622F11 /* HttpRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071AE2B216F39EF00622F11 /* HttpRequestBuilder.swift */; };
+		70C18EA721C3A0A2007F3826 /* Cadmus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C18EA621C3A0A2007F3826 /* Cadmus.framework */; };
 		70D17732216D9D05004C3733 /* HttpEngineCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 70D17730216D9D05004C3733 /* HttpEngineCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70D17739216D9D54004C3733 /* HttpEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D17738216D9D54004C3733 /* HttpEngine.swift */; };
 		70D1773D216D9DC6004C3733 /* Hydra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D1773B216D9DC6004C3733 /* Hydra.framework */; };
-		70D1773E216D9DC6004C3733 /* LogWrapperKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D1773C216D9DC6004C3733 /* LogWrapperKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7071AE2B216F39EF00622F11 /* HttpRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestBuilder.swift; sourceTree = "<group>"; };
+		70C18EA621C3A0A2007F3826 /* Cadmus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cadmus.framework; path = Carthage/Build/iOS/Cadmus.framework; sourceTree = "<group>"; };
 		70D1772D216D9D05004C3733 /* HttpEngineCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HttpEngineCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70D17730216D9D05004C3733 /* HttpEngineCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpEngineCore.h; sourceTree = "<group>"; };
 		70D17731216D9D05004C3733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -30,7 +31,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70D1773D216D9DC6004C3733 /* Hydra.framework in Frameworks */,
-				70D1773E216D9DC6004C3733 /* LogWrapperKit.framework in Frameworks */,
+				70C18EA721C3A0A2007F3826 /* Cadmus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +69,7 @@
 		70D1773A216D9DC6004C3733 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				70C18EA621C3A0A2007F3826 /* Cadmus.framework */,
 				70D1773B216D9DC6004C3733 /* Hydra.framework */,
 				70D1773C216D9DC6004C3733 /* LogWrapperKit.framework */,
 			);
