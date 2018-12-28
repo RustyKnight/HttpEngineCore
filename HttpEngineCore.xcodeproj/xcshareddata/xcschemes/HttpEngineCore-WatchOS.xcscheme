@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "70D1772C216D9D05004C3733"
+               BlueprintIdentifier = "7042921D21D6EFFD00D11F4E"
                BuildableName = "HttpEngineCore.framework"
-               BlueprintName = "HttpEngineCore-iOS"
+               BlueprintName = "HttpEngineCore-WatchOS"
                ReferencedContainer = "container:HttpEngineCore.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "70D1772C216D9D05004C3733"
+            BlueprintIdentifier = "7042921D21D6EFFD00D11F4E"
             BuildableName = "HttpEngineCore.framework"
-            BlueprintName = "HttpEngineCore-iOS"
+            BlueprintName = "HttpEngineCore-WatchOS"
             ReferencedContainer = "container:HttpEngineCore.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "70D1772C216D9D05004C3733"
+            BlueprintIdentifier = "7042921D21D6EFFD00D11F4E"
             BuildableName = "HttpEngineCore.framework"
-            BlueprintName = "HttpEngineCore-iOS"
+            BlueprintName = "HttpEngineCore-WatchOS"
             ReferencedContainer = "container:HttpEngineCore.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
