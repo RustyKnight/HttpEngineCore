@@ -19,9 +19,11 @@ public protocol HttpEngine {
 
 	// MARK: put
 	func put(data: Data) -> Promise<Data?>
+	func put() -> Promise<Data?>
 
 	// MARK: post
 	func post(data: Data) -> Promise<Data?>
+	func post() -> Promise<Data?>
 
 	// MARK: delete
 	func delete() -> Promise<Data?>
