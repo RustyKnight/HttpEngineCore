@@ -11,20 +11,27 @@ import Hydra
 
 public typealias HttpProgressMonitor = (Double) -> Void
 
+public protocol RequestResponse {
+	var statusCode: Int { get }
+	var statusDescription: String { get }
+	var data: Data? { get }
+}
+
 public protocol HttpEngine {
 	
 	// MARK: get
-	func get() -> Promise<Data?>
-	func get(data: Data) -> Promise<Data?>
+	func get() -> Promise<RequestResponse>
+	func get(data: Data) -> Promise<RequestResponse>
 
 	// MARK: put
-	func put(data: Data) -> Promise<Data?>
-	func put() -> Promise<Data?>
+	func put(data: Data) -> Promise<RequestResponse>
+	func put() -> Promise<RequestResponse>
 
 	// MARK: post
-	func post(data: Data) -> Promise<Data?>
-	func post() -> Promise<Data?>
+	func post(data: Data) -> Promise<RequestResponse>
+	func post() -> Promise<RequestResponse>
 
 	// MARK: delete
-	func delete() -> Promise<Data?>
+	func delete() -> Promise<RequestResponse>
+	func delete(data: Data) -> Promise<RequestResponse>
 }
