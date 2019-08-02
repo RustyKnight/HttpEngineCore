@@ -258,7 +258,7 @@
 		70D17724216D9D05004C3733 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = KaiZen;
 				TargetAttributes = {
 					7042921D21D6EFFD00D11F4E = {
@@ -272,7 +272,7 @@
 					};
 					70D1772C216D9D05004C3733 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -282,6 +282,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 70D17723216D9D05004C3733;
 			productRefGroup = 70D1772E216D9D05004C3733 /* Products */;
@@ -474,7 +475,7 @@
 		7042923E21D6F02100D11F4E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -502,7 +503,7 @@
 		7042923F21D6F02100D11F4E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -675,7 +676,7 @@
 				PRODUCT_NAME = HttpEngineCore;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -705,7 +706,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.kaizen.HttpEngineCore;
 				PRODUCT_NAME = HttpEngineCore;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
