@@ -25,6 +25,9 @@
 		184A32EA237FBB2C00D4A66C /* Hydra.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 184A32E7237FBB2C00D4A66C /* Hydra.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		184A32EB237FBB2C00D4A66C /* Cadmus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184A32E8237FBB2C00D4A66C /* Cadmus.framework */; };
 		184A32EC237FBB2C00D4A66C /* Cadmus.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 184A32E8237FBB2C00D4A66C /* Cadmus.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1854964B237FE1F600A77DD3 /* HttpEngineCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 70D17730216D9D05004C3733 /* HttpEngineCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1854964C237FE1F700A77DD3 /* HttpEngineCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 70D17730216D9D05004C3733 /* HttpEngineCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1854964D237FE1F700A77DD3 /* HttpEngineCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 70D17730216D9D05004C3733 /* HttpEngineCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7071AE2C216F39EF00622F11 /* HttpRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071AE2B216F39EF00622F11 /* HttpRequestBuilder.swift */; };
 		70C18EA721C3A0A2007F3826 /* Cadmus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C18EA621C3A0A2007F3826 /* Cadmus.framework */; };
 		70D17732216D9D05004C3733 /* HttpEngineCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 70D17730216D9D05004C3733 /* HttpEngineCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -185,6 +188,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1854964B237FE1F600A77DD3 /* HttpEngineCore.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +196,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1854964C237FE1F700A77DD3 /* HttpEngineCore.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +204,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1854964D237FE1F700A77DD3 /* HttpEngineCore.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
