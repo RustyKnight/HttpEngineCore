@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		184A32D3237FBA6100D4A66C /* HttpEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D17738216D9D54004C3733 /* HttpEngine.swift */; };
+		184A32D4237FBA6100D4A66C /* HttpRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071AE2B216F39EF00622F11 /* HttpRequestBuilder.swift */; };
+		184A32D5237FBA6100D4A66C /* HttpEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D17738216D9D54004C3733 /* HttpEngine.swift */; };
+		184A32D6237FBA6100D4A66C /* HttpRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071AE2B216F39EF00622F11 /* HttpRequestBuilder.swift */; };
+		184A32D7237FBA6200D4A66C /* HttpEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D17738216D9D54004C3733 /* HttpEngine.swift */; };
+		184A32D8237FBA6200D4A66C /* HttpRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071AE2B216F39EF00622F11 /* HttpRequestBuilder.swift */; };
+		184A32DB237FBB0F00D4A66C /* Hydra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184A32D9237FBB0F00D4A66C /* Hydra.framework */; };
+		184A32DC237FBB0F00D4A66C /* Hydra.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 184A32D9237FBB0F00D4A66C /* Hydra.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		184A32DD237FBB0F00D4A66C /* Cadmus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184A32DA237FBB0F00D4A66C /* Cadmus.framework */; };
+		184A32DE237FBB0F00D4A66C /* Cadmus.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 184A32DA237FBB0F00D4A66C /* Cadmus.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		184A32E2237FBB1800D4A66C /* Hydra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184A32E0237FBB1800D4A66C /* Hydra.framework */; };
+		184A32E3237FBB1800D4A66C /* Hydra.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 184A32E0237FBB1800D4A66C /* Hydra.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		184A32E4237FBB1800D4A66C /* Cadmus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184A32E1237FBB1800D4A66C /* Cadmus.framework */; };
+		184A32E5237FBB1800D4A66C /* Cadmus.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 184A32E1237FBB1800D4A66C /* Cadmus.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		184A32E9237FBB2C00D4A66C /* Hydra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184A32E7237FBB2C00D4A66C /* Hydra.framework */; };
+		184A32EA237FBB2C00D4A66C /* Hydra.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 184A32E7237FBB2C00D4A66C /* Hydra.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		184A32EB237FBB2C00D4A66C /* Cadmus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184A32E8237FBB2C00D4A66C /* Cadmus.framework */; };
+		184A32EC237FBB2C00D4A66C /* Cadmus.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 184A32E8237FBB2C00D4A66C /* Cadmus.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7042922221D6EFFD00D11F4E /* HttpEngineCore_WatchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 7042922021D6EFFD00D11F4E /* HttpEngineCore_WatchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7042922F21D6F00D00D11F4E /* HttpEngineCore_TVOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 7042922D21D6F00D00D11F4E /* HttpEngineCore_TVOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7042923C21D6F02100D11F4E /* HttpEngineCore_MacOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 7042923A21D6F02100D11F4E /* HttpEngineCore_MacOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -17,7 +35,52 @@
 		70D1773D216D9DC6004C3733 /* Hydra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D1773B216D9DC6004C3733 /* Hydra.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		184A32DF237FBB0F00D4A66C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				184A32DC237FBB0F00D4A66C /* Hydra.framework in Embed Frameworks */,
+				184A32DE237FBB0F00D4A66C /* Cadmus.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184A32E6237FBB1800D4A66C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				184A32E3237FBB1800D4A66C /* Hydra.framework in Embed Frameworks */,
+				184A32E5237FBB1800D4A66C /* Cadmus.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184A32ED237FBB2C00D4A66C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				184A32EA237FBB2C00D4A66C /* Hydra.framework in Embed Frameworks */,
+				184A32EC237FBB2C00D4A66C /* Cadmus.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		184A32D9237FBB0F00D4A66C /* Hydra.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hydra.framework; path = Carthage/Build/watchOS/Hydra.framework; sourceTree = "<group>"; };
+		184A32DA237FBB0F00D4A66C /* Cadmus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cadmus.framework; path = Carthage/Build/watchOS/Cadmus.framework; sourceTree = "<group>"; };
+		184A32E0237FBB1800D4A66C /* Hydra.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hydra.framework; path = Carthage/Build/tvOS/Hydra.framework; sourceTree = "<group>"; };
+		184A32E1237FBB1800D4A66C /* Cadmus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cadmus.framework; path = Carthage/Build/tvOS/Cadmus.framework; sourceTree = "<group>"; };
+		184A32E7237FBB2C00D4A66C /* Hydra.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hydra.framework; path = Carthage/Build/Mac/Hydra.framework; sourceTree = "<group>"; };
+		184A32E8237FBB2C00D4A66C /* Cadmus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cadmus.framework; path = Carthage/Build/Mac/Cadmus.framework; sourceTree = "<group>"; };
 		7042921E21D6EFFD00D11F4E /* HttpEngineCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HttpEngineCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7042922021D6EFFD00D11F4E /* HttpEngineCore_WatchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpEngineCore_WatchOS.h; sourceTree = "<group>"; };
 		7042922121D6EFFD00D11F4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,6 +105,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184A32DB237FBB0F00D4A66C /* Hydra.framework in Frameworks */,
+				184A32DD237FBB0F00D4A66C /* Cadmus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +114,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184A32E2237FBB1800D4A66C /* Hydra.framework in Frameworks */,
+				184A32E4237FBB1800D4A66C /* Cadmus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +123,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184A32E9237FBB2C00D4A66C /* Hydra.framework in Frameworks */,
+				184A32EB237FBB2C00D4A66C /* Cadmus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +205,13 @@
 			isa = PBXGroup;
 			children = (
 				70C18EA621C3A0A2007F3826 /* Cadmus.framework */,
+				184A32DA237FBB0F00D4A66C /* Cadmus.framework */,
+				184A32E1237FBB1800D4A66C /* Cadmus.framework */,
+				184A32E8237FBB2C00D4A66C /* Cadmus.framework */,
 				70D1773B216D9DC6004C3733 /* Hydra.framework */,
+				184A32D9237FBB0F00D4A66C /* Hydra.framework */,
+				184A32E0237FBB1800D4A66C /* Hydra.framework */,
+				184A32E7237FBB2C00D4A66C /* Hydra.framework */,
 				70D1773C216D9DC6004C3733 /* LogWrapperKit.framework */,
 			);
 			name = Frameworks;
@@ -188,6 +263,7 @@
 				7042921A21D6EFFD00D11F4E /* Sources */,
 				7042921B21D6EFFD00D11F4E /* Frameworks */,
 				7042921C21D6EFFD00D11F4E /* Resources */,
+				184A32DF237FBB0F00D4A66C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -206,6 +282,7 @@
 				7042922721D6F00D00D11F4E /* Sources */,
 				7042922821D6F00D00D11F4E /* Frameworks */,
 				7042922921D6F00D00D11F4E /* Resources */,
+				184A32E6237FBB1800D4A66C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -224,6 +301,7 @@
 				7042923421D6F02100D11F4E /* Sources */,
 				7042923521D6F02100D11F4E /* Frameworks */,
 				7042923621D6F02100D11F4E /* Resources */,
+				184A32ED237FBB2C00D4A66C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -333,6 +411,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184A32D3237FBA6100D4A66C /* HttpEngine.swift in Sources */,
+				184A32D4237FBA6100D4A66C /* HttpRequestBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +420,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184A32D5237FBA6100D4A66C /* HttpEngine.swift in Sources */,
+				184A32D6237FBA6100D4A66C /* HttpRequestBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +429,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184A32D7237FBA6200D4A66C /* HttpEngine.swift in Sources */,
+				184A32D8237FBA6200D4A66C /* HttpRequestBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +457,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
 				INFOPLIST_FILE = "HttpEngineCore-WatchOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -401,6 +489,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
 				INFOPLIST_FILE = "HttpEngineCore-WatchOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -428,6 +520,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = "HttpEngineCore-TVOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -455,6 +551,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = "HttpEngineCore-TVOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -483,6 +583,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "HttpEngineCore-MacOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -511,6 +615,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "HttpEngineCore-MacOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
