@@ -25,9 +25,6 @@
 		184A32EA237FBB2C00D4A66C /* Hydra.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 184A32E7237FBB2C00D4A66C /* Hydra.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		184A32EB237FBB2C00D4A66C /* Cadmus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184A32E8237FBB2C00D4A66C /* Cadmus.framework */; };
 		184A32EC237FBB2C00D4A66C /* Cadmus.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 184A32E8237FBB2C00D4A66C /* Cadmus.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7042922221D6EFFD00D11F4E /* HttpEngineCore_WatchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 7042922021D6EFFD00D11F4E /* HttpEngineCore_WatchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7042922F21D6F00D00D11F4E /* HttpEngineCore_TVOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 7042922D21D6F00D00D11F4E /* HttpEngineCore_TVOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7042923C21D6F02100D11F4E /* HttpEngineCore_MacOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 7042923A21D6F02100D11F4E /* HttpEngineCore_MacOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7071AE2C216F39EF00622F11 /* HttpRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071AE2B216F39EF00622F11 /* HttpRequestBuilder.swift */; };
 		70C18EA721C3A0A2007F3826 /* Cadmus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C18EA621C3A0A2007F3826 /* Cadmus.framework */; };
 		70D17732216D9D05004C3733 /* HttpEngineCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 70D17730216D9D05004C3733 /* HttpEngineCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -82,14 +79,8 @@
 		184A32E7237FBB2C00D4A66C /* Hydra.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hydra.framework; path = Carthage/Build/Mac/Hydra.framework; sourceTree = "<group>"; };
 		184A32E8237FBB2C00D4A66C /* Cadmus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cadmus.framework; path = Carthage/Build/Mac/Cadmus.framework; sourceTree = "<group>"; };
 		7042921E21D6EFFD00D11F4E /* HttpEngineCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HttpEngineCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7042922021D6EFFD00D11F4E /* HttpEngineCore_WatchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpEngineCore_WatchOS.h; sourceTree = "<group>"; };
-		7042922121D6EFFD00D11F4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7042922B21D6F00D00D11F4E /* HttpEngineCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HttpEngineCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7042922D21D6F00D00D11F4E /* HttpEngineCore_TVOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpEngineCore_TVOS.h; sourceTree = "<group>"; };
-		7042922E21D6F00D00D11F4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7042923821D6F02100D11F4E /* HttpEngineCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HttpEngineCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7042923A21D6F02100D11F4E /* HttpEngineCore_MacOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpEngineCore_MacOS.h; sourceTree = "<group>"; };
-		7042923B21D6F02100D11F4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7071AE2B216F39EF00622F11 /* HttpRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestBuilder.swift; sourceTree = "<group>"; };
 		70C18EA621C3A0A2007F3826 /* Cadmus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cadmus.framework; path = Carthage/Build/iOS/Cadmus.framework; sourceTree = "<group>"; };
 		70D1772D216D9D05004C3733 /* HttpEngineCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HttpEngineCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,40 +131,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7042921F21D6EFFD00D11F4E /* HttpEngineCore-WatchOS */ = {
-			isa = PBXGroup;
-			children = (
-				7042922021D6EFFD00D11F4E /* HttpEngineCore_WatchOS.h */,
-				7042922121D6EFFD00D11F4E /* Info.plist */,
-			);
-			path = "HttpEngineCore-WatchOS";
-			sourceTree = "<group>";
-		};
-		7042922C21D6F00D00D11F4E /* HttpEngineCore-TVOS */ = {
-			isa = PBXGroup;
-			children = (
-				7042922D21D6F00D00D11F4E /* HttpEngineCore_TVOS.h */,
-				7042922E21D6F00D00D11F4E /* Info.plist */,
-			);
-			path = "HttpEngineCore-TVOS";
-			sourceTree = "<group>";
-		};
-		7042923921D6F02100D11F4E /* HttpEngineCore-MacOS */ = {
-			isa = PBXGroup;
-			children = (
-				7042923A21D6F02100D11F4E /* HttpEngineCore_MacOS.h */,
-				7042923B21D6F02100D11F4E /* Info.plist */,
-			);
-			path = "HttpEngineCore-MacOS";
-			sourceTree = "<group>";
-		};
 		70D17723216D9D05004C3733 = {
 			isa = PBXGroup;
 			children = (
 				70D1772F216D9D05004C3733 /* HttpEngineCore */,
-				7042921F21D6EFFD00D11F4E /* HttpEngineCore-WatchOS */,
-				7042922C21D6F00D00D11F4E /* HttpEngineCore-TVOS */,
-				7042923921D6F02100D11F4E /* HttpEngineCore-MacOS */,
 				70D1772E216D9D05004C3733 /* Products */,
 				70D1773A216D9DC6004C3733 /* Frameworks */,
 			);
@@ -224,7 +185,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7042922221D6EFFD00D11F4E /* HttpEngineCore_WatchOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +192,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7042922F21D6F00D00D11F4E /* HttpEngineCore_TVOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +199,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7042923C21D6F02100D11F4E /* HttpEngineCore_MacOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,9 +213,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7042921D21D6EFFD00D11F4E /* HttpEngineCore-WatchOS */ = {
+		7042921D21D6EFFD00D11F4E /* watchOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7042922321D6EFFD00D11F4E /* Build configuration list for PBXNativeTarget "HttpEngineCore-WatchOS" */;
+			buildConfigurationList = 7042922321D6EFFD00D11F4E /* Build configuration list for PBXNativeTarget "watchOS" */;
 			buildPhases = (
 				7042921921D6EFFD00D11F4E /* Headers */,
 				7042921A21D6EFFD00D11F4E /* Sources */,
@@ -269,14 +227,14 @@
 			);
 			dependencies = (
 			);
-			name = "HttpEngineCore-WatchOS";
+			name = watchOS;
 			productName = "HttpEngineCore-WatchOS";
 			productReference = 7042921E21D6EFFD00D11F4E /* HttpEngineCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7042922A21D6F00D00D11F4E /* HttpEngineCore-TVOS */ = {
+		7042922A21D6F00D00D11F4E /* tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7042923021D6F00D00D11F4E /* Build configuration list for PBXNativeTarget "HttpEngineCore-TVOS" */;
+			buildConfigurationList = 7042923021D6F00D00D11F4E /* Build configuration list for PBXNativeTarget "tvOS" */;
 			buildPhases = (
 				7042922621D6F00D00D11F4E /* Headers */,
 				7042922721D6F00D00D11F4E /* Sources */,
@@ -288,14 +246,14 @@
 			);
 			dependencies = (
 			);
-			name = "HttpEngineCore-TVOS";
+			name = tvOS;
 			productName = "HttpEngineCore-TVOS";
 			productReference = 7042922B21D6F00D00D11F4E /* HttpEngineCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7042923721D6F02100D11F4E /* HttpEngineCore-MacOS */ = {
+		7042923721D6F02100D11F4E /* macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7042923D21D6F02100D11F4E /* Build configuration list for PBXNativeTarget "HttpEngineCore-MacOS" */;
+			buildConfigurationList = 7042923D21D6F02100D11F4E /* Build configuration list for PBXNativeTarget "macOS" */;
 			buildPhases = (
 				7042923321D6F02100D11F4E /* Headers */,
 				7042923421D6F02100D11F4E /* Sources */,
@@ -307,14 +265,14 @@
 			);
 			dependencies = (
 			);
-			name = "HttpEngineCore-MacOS";
+			name = macOS;
 			productName = "HttpEngineCore-MacOS";
 			productReference = 7042923821D6F02100D11F4E /* HttpEngineCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		70D1772C216D9D05004C3733 /* HttpEngineCore-iOS */ = {
+		70D1772C216D9D05004C3733 /* iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 70D17735216D9D05004C3733 /* Build configuration list for PBXNativeTarget "HttpEngineCore-iOS" */;
+			buildConfigurationList = 70D17735216D9D05004C3733 /* Build configuration list for PBXNativeTarget "iOS" */;
 			buildPhases = (
 				70D17728216D9D05004C3733 /* Headers */,
 				70D17729216D9D05004C3733 /* Sources */,
@@ -325,7 +283,7 @@
 			);
 			dependencies = (
 			);
-			name = "HttpEngineCore-iOS";
+			name = iOS;
 			productName = HttpEngineCore;
 			productReference = 70D1772D216D9D05004C3733 /* HttpEngineCore.framework */;
 			productType = "com.apple.product-type.framework";
@@ -367,10 +325,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				70D1772C216D9D05004C3733 /* HttpEngineCore-iOS */,
-				7042921D21D6EFFD00D11F4E /* HttpEngineCore-WatchOS */,
-				7042922A21D6F00D00D11F4E /* HttpEngineCore-TVOS */,
-				7042923721D6F02100D11F4E /* HttpEngineCore-MacOS */,
+				70D1772C216D9D05004C3733 /* iOS */,
+				7042921D21D6EFFD00D11F4E /* watchOS */,
+				7042922A21D6F00D00D11F4E /* tvOS */,
+				7042923721D6F02100D11F4E /* macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -461,7 +419,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/watchOS",
 				);
-				INFOPLIST_FILE = "HttpEngineCore-WatchOS/Info.plist";
+				INFOPLIST_FILE = HttpEngineCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -493,7 +451,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/watchOS",
 				);
-				INFOPLIST_FILE = "HttpEngineCore-WatchOS/Info.plist";
+				INFOPLIST_FILE = HttpEngineCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -524,7 +482,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 				);
-				INFOPLIST_FILE = "HttpEngineCore-TVOS/Info.plist";
+				INFOPLIST_FILE = HttpEngineCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -555,7 +513,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 				);
-				INFOPLIST_FILE = "HttpEngineCore-TVOS/Info.plist";
+				INFOPLIST_FILE = HttpEngineCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -588,7 +546,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "HttpEngineCore-MacOS/Info.plist";
+				INFOPLIST_FILE = HttpEngineCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -620,7 +578,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "HttpEngineCore-MacOS/Info.plist";
+				INFOPLIST_FILE = HttpEngineCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -783,6 +741,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.kaizen.HttpEngineCore;
 				PRODUCT_NAME = HttpEngineCore;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -814,6 +773,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.kaizen.HttpEngineCore;
 				PRODUCT_NAME = HttpEngineCore;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -822,7 +782,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7042922321D6EFFD00D11F4E /* Build configuration list for PBXNativeTarget "HttpEngineCore-WatchOS" */ = {
+		7042922321D6EFFD00D11F4E /* Build configuration list for PBXNativeTarget "watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7042922421D6EFFD00D11F4E /* Debug */,
@@ -831,7 +791,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7042923021D6F00D00D11F4E /* Build configuration list for PBXNativeTarget "HttpEngineCore-TVOS" */ = {
+		7042923021D6F00D00D11F4E /* Build configuration list for PBXNativeTarget "tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7042923121D6F00D00D11F4E /* Debug */,
@@ -840,7 +800,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7042923D21D6F02100D11F4E /* Build configuration list for PBXNativeTarget "HttpEngineCore-MacOS" */ = {
+		7042923D21D6F02100D11F4E /* Build configuration list for PBXNativeTarget "macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7042923E21D6F02100D11F4E /* Debug */,
@@ -858,7 +818,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		70D17735216D9D05004C3733 /* Build configuration list for PBXNativeTarget "HttpEngineCore-iOS" */ = {
+		70D17735216D9D05004C3733 /* Build configuration list for PBXNativeTarget "iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				70D17736216D9D05004C3733 /* Debug */,

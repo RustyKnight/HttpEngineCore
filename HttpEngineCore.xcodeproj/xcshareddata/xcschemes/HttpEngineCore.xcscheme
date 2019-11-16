@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "70D1772C216D9D05004C3733"
                BuildableName = "HttpEngineCore.framework"
-               BlueprintName = "HttpEngineCore-iOS"
+               BlueprintName = "iOS"
                ReferencedContainer = "container:HttpEngineCore.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,7 +45,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "70D1772C216D9D05004C3733"
             BuildableName = "HttpEngineCore.framework"
-            BlueprintName = "HttpEngineCore-iOS"
+            BlueprintName = "iOS"
             ReferencedContainer = "container:HttpEngineCore.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -61,7 +61,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "70D1772C216D9D05004C3733"
             BuildableName = "HttpEngineCore.framework"
-            BlueprintName = "HttpEngineCore-iOS"
+            BlueprintName = "iOS"
             ReferencedContainer = "container:HttpEngineCore.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

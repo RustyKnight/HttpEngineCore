@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7042922A21D6F00D00D11F4E"
                BuildableName = "HttpEngineCore.framework"
-               BlueprintName = "HttpEngineCore-TVOS"
+               BlueprintName = "tvOS"
                ReferencedContainer = "container:HttpEngineCore.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,7 +45,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7042922A21D6F00D00D11F4E"
             BuildableName = "HttpEngineCore.framework"
-            BlueprintName = "HttpEngineCore-TVOS"
+            BlueprintName = "tvOS"
             ReferencedContainer = "container:HttpEngineCore.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -61,7 +61,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7042922A21D6F00D00D11F4E"
             BuildableName = "HttpEngineCore.framework"
-            BlueprintName = "HttpEngineCore-TVOS"
+            BlueprintName = "tvOS"
             ReferencedContainer = "container:HttpEngineCore.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
