@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1837036F237FECC3008B4633 /* HTTPEngineCore_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 1837036D237FECC3008B4633 /* HTTPEngineCore_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		184A32D3237FBA6100D4A66C /* HttpEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D17738216D9D54004C3733 /* HttpEngine.swift */; };
 		184A32D4237FBA6100D4A66C /* HttpRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071AE2B216F39EF00622F11 /* HttpRequestBuilder.swift */; };
 		184A32D5237FBA6100D4A66C /* HttpEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D17738216D9D54004C3733 /* HttpEngine.swift */; };
@@ -57,9 +56,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1837036B237FECC3008B4633 /* HttpEngineCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HttpEngineCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1837036D237FECC3008B4633 /* HTTPEngineCore_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPEngineCore_macOS.h; sourceTree = "<group>"; };
-		1837036E237FECC3008B4633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18336CCE237FEE480091FCB2 /* HttpEngineCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HttpEngineCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		184A32D9237FBB0F00D4A66C /* Hydra.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hydra.framework; path = Carthage/Build/watchOS/Hydra.framework; sourceTree = "<group>"; };
 		184A32DA237FBB0F00D4A66C /* Cadmus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cadmus.framework; path = Carthage/Build/watchOS/Cadmus.framework; sourceTree = "<group>"; };
 		184A32E0237FBB1800D4A66C /* Hydra.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hydra.framework; path = Carthage/Build/tvOS/Hydra.framework; sourceTree = "<group>"; };
@@ -79,7 +76,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		18370368237FECC3008B4633 /* Frameworks */ = {
+		18336CCB237FEE480091FCB2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -116,20 +113,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1837036C237FECC3008B4633 /* HTTPEngineCore-macOS */ = {
-			isa = PBXGroup;
-			children = (
-				1837036D237FECC3008B4633 /* HTTPEngineCore_macOS.h */,
-				1837036E237FECC3008B4633 /* Info.plist */,
-			);
-			path = "HTTPEngineCore-macOS";
-			sourceTree = "<group>";
-		};
 		70D17723216D9D05004C3733 = {
 			isa = PBXGroup;
 			children = (
 				70D1772F216D9D05004C3733 /* HttpEngineCore */,
-				1837036C237FECC3008B4633 /* HTTPEngineCore-macOS */,
 				70D1772E216D9D05004C3733 /* Products */,
 				70D1773A216D9DC6004C3733 /* Frameworks */,
 			);
@@ -141,7 +128,7 @@
 				70D1772D216D9D05004C3733 /* HttpEngineCore.framework */,
 				7042921E21D6EFFD00D11F4E /* HttpEngineCore.framework */,
 				7042922B21D6F00D00D11F4E /* HttpEngineCore.framework */,
-				1837036B237FECC3008B4633 /* HttpEngineCore.framework */,
+				18336CCE237FEE480091FCB2 /* HttpEngineCore.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,11 +163,10 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		18370366237FECC3008B4633 /* Headers */ = {
+		18336CC9237FEE480091FCB2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1837036F237FECC3008B4633 /* HTTPEngineCore_macOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,22 +197,22 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1837036A237FECC3008B4633 /* macOS */ = {
+		18336CCD237FEE480091FCB2 /* macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 18370370237FECC3008B4633 /* Build configuration list for PBXNativeTarget "macOS" */;
+			buildConfigurationList = 18336CD3237FEE480091FCB2 /* Build configuration list for PBXNativeTarget "macOS" */;
 			buildPhases = (
-				18370366237FECC3008B4633 /* Headers */,
-				18370367237FECC3008B4633 /* Sources */,
-				18370368237FECC3008B4633 /* Frameworks */,
-				18370369237FECC3008B4633 /* Resources */,
+				18336CC9237FEE480091FCB2 /* Headers */,
+				18336CCA237FEE480091FCB2 /* Sources */,
+				18336CCB237FEE480091FCB2 /* Frameworks */,
+				18336CCC237FEE480091FCB2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = macOS;
-			productName = "HTTPEngineCore-macOS";
-			productReference = 1837036B237FECC3008B4633 /* HttpEngineCore.framework */;
+			productName = "HttpEngineCore-macOS";
+			productReference = 18336CCE237FEE480091FCB2 /* HttpEngineCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		7042921D21D6EFFD00D11F4E /* watchOS */ = {
@@ -294,7 +280,7 @@
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = KaiZen;
 				TargetAttributes = {
-					1837036A237FECC3008B4633 = {
+					18336CCD237FEE480091FCB2 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
 					7042921D21D6EFFD00D11F4E = {
@@ -325,13 +311,13 @@
 				70D1772C216D9D05004C3733 /* iOS */,
 				7042921D21D6EFFD00D11F4E /* watchOS */,
 				7042922A21D6F00D00D11F4E /* tvOS */,
-				1837036A237FECC3008B4633 /* macOS */,
+				18336CCD237FEE480091FCB2 /* macOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		18370369237FECC3008B4633 /* Resources */ = {
+		18336CCC237FEE480091FCB2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -362,7 +348,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		18370367237FECC3008B4633 /* Sources */ = {
+		18336CCA237FEE480091FCB2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -399,7 +385,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		18370371237FECC3008B4633 /* Debug */ = {
+		18336CD4237FEE480091FCB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -417,7 +403,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.kaizen.HTTPEngineCore-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.kaizen.HttpEngineCore-macOS";
 				PRODUCT_NAME = HttpEngineCore;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -425,7 +411,7 @@
 			};
 			name = Debug;
 		};
-		18370372237FECC3008B4633 /* Release */ = {
+		18336CD5237FEE480091FCB2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -443,7 +429,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.kaizen.HTTPEngineCore-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.kaizen.HttpEngineCore-macOS";
 				PRODUCT_NAME = HttpEngineCore;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -765,11 +751,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		18370370237FECC3008B4633 /* Build configuration list for PBXNativeTarget "macOS" */ = {
+		18336CD3237FEE480091FCB2 /* Build configuration list for PBXNativeTarget "macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				18370371237FECC3008B4633 /* Debug */,
-				18370372237FECC3008B4633 /* Release */,
+				18336CD4237FEE480091FCB2 /* Debug */,
+				18336CD5237FEE480091FCB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

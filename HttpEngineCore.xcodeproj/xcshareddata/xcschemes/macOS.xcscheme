@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1837036A237FECC3008B4633"
-               BuildableName = "macOS.framework"
-               BlueprintName = "macOS"
+               BlueprintIdentifier = "18336CCD237FEE480091FCB2"
+               BuildableName = "HttpEngineCore_macOS.framework"
+               BlueprintName = "HttpEngineCore-macOS"
                ReferencedContainer = "container:HttpEngineCore.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -50,9 +50,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1837036A237FECC3008B4633"
-            BuildableName = "macOS.framework"
-            BlueprintName = "macOS"
+            BlueprintIdentifier = "18336CCD237FEE480091FCB2"
+            BuildableName = "HttpEngineCore_macOS.framework"
+            BlueprintName = "HttpEngineCore-macOS"
             ReferencedContainer = "container:HttpEngineCore.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
