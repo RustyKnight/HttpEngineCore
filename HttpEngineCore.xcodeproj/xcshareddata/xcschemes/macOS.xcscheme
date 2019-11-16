@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1100"
+   LastUpgradeVersion = "1120"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7042923721D6F02100D11F4E"
-               BuildableName = "HttpEngineCore.framework"
+               BlueprintIdentifier = "1837036A237FECC3008B4633"
+               BuildableName = "macOS.framework"
                BlueprintName = "macOS"
                ReferencedContainer = "container:HttpEngineCore.xcodeproj">
             </BuildableReference>
@@ -40,15 +40,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7042923721D6F02100D11F4E"
-            BuildableName = "HttpEngineCore.framework"
-            BlueprintName = "macOS"
-            ReferencedContainer = "container:HttpEngineCore.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -59,8 +50,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7042923721D6F02100D11F4E"
-            BuildableName = "HttpEngineCore.framework"
+            BlueprintIdentifier = "1837036A237FECC3008B4633"
+            BuildableName = "macOS.framework"
             BlueprintName = "macOS"
             ReferencedContainer = "container:HttpEngineCore.xcodeproj">
          </BuildableReference>
