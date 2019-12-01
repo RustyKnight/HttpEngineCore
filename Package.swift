@@ -18,11 +18,12 @@ let package = Package(
         .library(name: "HttpEngineCore", targets: ["HttpEngineCore"]),
     ],
     dependencies: [
-        //.package(url: "https://url/of/another/package/named/Utility", from: "1.0.0"),
 			.package(url: "https://github.com/RustyKnight/Cadmus", Package.Dependency.Requirement.branch("feature/spm")),
-			.package(url: "https://github.com/malcommac/Hydra.git", from: "2.0.0"),
+			.package(url: "https://github.com/malcommac/Hydra.git", from: "2.0.0")
     ],
     targets: [
-			.target(name: "HttpEngineCore", dependencies: ["Cadmus", "Hydra"], path: "HttpEngineCore"),
+			.target(name: "HttpEngineCore",
+							dependencies: ["Cadmus", "Hydra"],
+							path: "HttpEngineCore"),
     ]
 )

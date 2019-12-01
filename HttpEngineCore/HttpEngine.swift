@@ -30,6 +30,7 @@ public protocol HttpEngine {
 	// MARK: post
 	func post(data: Data) -> Promise<RequestResponse>
 	func post() -> Promise<RequestResponse>
+	func post(formData: [MultipartFormItem]) -> Promise<RequestResponse>
 
 	// MARK: delete
 	func delete() -> Promise<RequestResponse>
