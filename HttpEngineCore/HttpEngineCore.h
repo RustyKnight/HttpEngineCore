@@ -6,7 +6,7 @@
 //  Copyright © 2018 KaiZen. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for HttpEngineCore.
 FOUNDATION_EXPORT double HttpEngineCoreVersionNumber;
