@@ -81,3 +81,5 @@ Carthage/Build
 fastlane/builds
 *.cer
 *.zip
+/.build
+/.swiftpm
