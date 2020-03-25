@@ -26,6 +26,10 @@
 		1852A8B2237FF0F30066B8A3 /* Hydra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184A32E7237FBB2C00D4A66C /* Hydra.framework */; };
 		1854964B237FE1F600A77DD3 /* HttpEngineCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 70D17730216D9D05004C3733 /* HttpEngineCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1854964C237FE1F700A77DD3 /* HttpEngineCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 70D17730216D9D05004C3733 /* HttpEngineCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18EC3E56239397900031A849 /* MultipartFormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC3E55239397900031A849 /* MultipartFormItem.swift */; };
+		18EC3E57239397B30031A849 /* MultipartFormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC3E55239397900031A849 /* MultipartFormItem.swift */; };
+		18EC3E58239397B30031A849 /* MultipartFormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC3E55239397900031A849 /* MultipartFormItem.swift */; };
+		18EC3E59239397B40031A849 /* MultipartFormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC3E55239397900031A849 /* MultipartFormItem.swift */; };
 		7071AE2C216F39EF00622F11 /* HttpRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071AE2B216F39EF00622F11 /* HttpRequestBuilder.swift */; };
 		70C18EA721C3A0A2007F3826 /* Cadmus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C18EA621C3A0A2007F3826 /* Cadmus.framework */; };
 		70D17732216D9D05004C3733 /* HttpEngineCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 70D17730216D9D05004C3733 /* HttpEngineCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -68,6 +72,8 @@
 		184A32E1237FBB1800D4A66C /* Cadmus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cadmus.framework; path = Carthage/Build/tvOS/Cadmus.framework; sourceTree = "<group>"; };
 		184A32E7237FBB2C00D4A66C /* Hydra.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hydra.framework; path = Carthage/Build/Mac/Hydra.framework; sourceTree = "<group>"; };
 		184A32E8237FBB2C00D4A66C /* Cadmus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cadmus.framework; path = Carthage/Build/Mac/Cadmus.framework; sourceTree = "<group>"; };
+		187EC519238122DA0094E985 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		18EC3E55239397900031A849 /* MultipartFormItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipartFormItem.swift; sourceTree = "<group>"; };
 		7042921E21D6EFFD00D11F4E /* HttpEngineCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HttpEngineCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7042922B21D6F00D00D11F4E /* HttpEngineCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HttpEngineCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7071AE2B216F39EF00622F11 /* HttpRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestBuilder.swift; sourceTree = "<group>"; };
@@ -123,6 +129,7 @@
 		70D17723216D9D05004C3733 = {
 			isa = PBXGroup;
 			children = (
+				187EC519238122DA0094E985 /* Package.swift */,
 				70D1772F216D9D05004C3733 /* HttpEngineCore */,
 				70D1772E216D9D05004C3733 /* Products */,
 				70D1773A216D9DC6004C3733 /* Frameworks */,
@@ -143,10 +150,11 @@
 		70D1772F216D9D05004C3733 /* HttpEngineCore */ = {
 			isa = PBXGroup;
 			children = (
-				70D17730216D9D05004C3733 /* HttpEngineCore.h */,
-				70D17731216D9D05004C3733 /* Info.plist */,
 				70D17738216D9D54004C3733 /* HttpEngine.swift */,
+				70D17730216D9D05004C3733 /* HttpEngineCore.h */,
 				7071AE2B216F39EF00622F11 /* HttpRequestBuilder.swift */,
+				70D17731216D9D05004C3733 /* Info.plist */,
+				18EC3E55239397900031A849 /* MultipartFormItem.swift */,
 			);
 			path = HttpEngineCore;
 			sourceTree = "<group>";
@@ -362,6 +370,7 @@
 			files = (
 				1852A8AE237FF0660066B8A3 /* HttpEngine.swift in Sources */,
 				1852A8AF237FF0660066B8A3 /* HttpRequestBuilder.swift in Sources */,
+				18EC3E59239397B40031A849 /* MultipartFormItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +380,7 @@
 			files = (
 				184A32D3237FBA6100D4A66C /* HttpEngine.swift in Sources */,
 				184A32D4237FBA6100D4A66C /* HttpRequestBuilder.swift in Sources */,
+				18EC3E57239397B30031A849 /* MultipartFormItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +390,7 @@
 			files = (
 				184A32D5237FBA6100D4A66C /* HttpEngine.swift in Sources */,
 				184A32D6237FBA6100D4A66C /* HttpRequestBuilder.swift in Sources */,
+				18EC3E58239397B30031A849 /* MultipartFormItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +400,7 @@
 			files = (
 				70D17739216D9D54004C3733 /* HttpEngine.swift in Sources */,
 				7071AE2C216F39EF00622F11 /* HttpRequestBuilder.swift in Sources */,
+				18EC3E56239397900031A849 /* MultipartFormItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
