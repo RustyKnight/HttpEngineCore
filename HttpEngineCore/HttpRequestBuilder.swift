@@ -40,6 +40,7 @@ public protocol HttpRequestBuilder {
 	func with(headers: [String: String]) -> Self
 	func with(credentials: Credentials) -> Self
 	func with(progressMonitor: @escaping ProgressMonitor) -> Self
+	func with(timeout: TimeInterval) -> Self
 	
 	func build() throws -> HttpEngine
 }
@@ -51,6 +52,7 @@ open class BaseHttpRequestBuilder: HttpRequestBuilder {
 	public var headers: [String: String]?
 	public var credentials: Credentials?
 	public var progressMonitor: ProgressMonitor?
+	public var timeout: TimeInterval?
 	
 	public init(to: URL) {
 		self.url = to
@@ -73,6 +75,11 @@ open class BaseHttpRequestBuilder: HttpRequestBuilder {
 	
 	public func with(progressMonitor: @escaping ProgressMonitor) -> Self {
 		self.progressMonitor = progressMonitor
+		return self
+	}
+	
+	public func with(timeout: TimeInterval) -> Self {
+		self.timeout = timeout
 		return self
 	}
 	

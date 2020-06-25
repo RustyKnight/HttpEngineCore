@@ -15,6 +15,7 @@ public protocol RequestResponse {
 	var statusCode: Int { get }
 	var statusDescription: String { get }
 	var data: Data? { get }
+	var responseHeaders: [AnyHashable: Any]? { get }
 }
 
 public protocol HttpEngine {
