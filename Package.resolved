@@ -14,9 +14,9 @@
         "package": "Hydra",
         "repositoryURL": "https://github.com/RustyKnight/Hydra",
         "state": {
-          "branch": null,
-          "revision": "50208021ae2712c8e8343ae37f97745289c7d4e0",
-          "version": "2.1.0"
+          "branch": "Linux",
+          "revision": "b3f7affbab06ee9d0a186b849a7a5414552042bc",
+          "version": null
         }
       }
     ]
