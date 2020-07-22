@@ -19,7 +19,7 @@ let package = Package(
     ],
     dependencies: [
 			.package(url: "https://github.com/RustyKnight/Cadmus", Package.Dependency.Requirement.branch("feature/spm")),
-			.package(url: "https://github.com/malcommac/Hydra.git", from: "2.0.0")
+            .package(url: "https://github.com/RustyKnight/Hydra", from: "2.1.0")
     ],
     targets: [
 			.target(name: "HttpEngineCore",
