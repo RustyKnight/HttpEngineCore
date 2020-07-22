@@ -12,11 +12,11 @@
       },
       {
         "package": "Hydra",
-        "repositoryURL": "https://github.com/RustyKnight/Hydra",
+        "repositoryURL": "https://github.com/malcommac/Hydra.git",
         "state": {
-          "branch": "Linux",
-          "revision": "b3f7affbab06ee9d0a186b849a7a5414552042bc",
-          "version": null
+          "branch": null,
+          "revision": "fe3e82646f0de8500a730348fd13bfa7e7058648",
+          "version": "2.0.2"
         }
       }
     ]
