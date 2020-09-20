@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Hydra
+import PromiseKit
 
 public typealias ProgressMonitor = (Double) -> Void
 
