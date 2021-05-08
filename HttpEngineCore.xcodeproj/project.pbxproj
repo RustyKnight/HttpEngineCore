@@ -3,44 +3,66 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1837324D2516DB4E008025A5 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1837324C2516DB4E008025A5 /* PromiseKit.framework */; };
-		183732532516DB56008025A5 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183732522516DB56008025A5 /* PromiseKit.framework */; };
 		1852A8AD237FF0660066B8A3 /* HttpEngineCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 70D17730216D9D05004C3733 /* HttpEngineCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1852A8AE237FF0660066B8A3 /* HttpEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D17738216D9D54004C3733 /* HttpEngine.swift */; };
 		1852A8AF237FF0660066B8A3 /* HttpRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071AE2B216F39EF00622F11 /* HttpRequestBuilder.swift */; };
-		1852A8B0237FF0F30066B8A3 /* Cadmus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184A32E8237FBB2C00D4A66C /* Cadmus.framework */; };
+		18C388412646A07500AE645D /* Cadmus.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C3883F2646A07500AE645D /* Cadmus.xcframework */; };
+		18C388422646A07500AE645D /* Cadmus.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18C3883F2646A07500AE645D /* Cadmus.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18C388432646A07500AE645D /* PromiseKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C388402646A07500AE645D /* PromiseKit.xcframework */; };
+		18C388442646A07500AE645D /* PromiseKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18C388402646A07500AE645D /* PromiseKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18C388462646A07A00AE645D /* Cadmus.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C3883F2646A07500AE645D /* Cadmus.xcframework */; };
+		18C388472646A07A00AE645D /* Cadmus.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18C3883F2646A07500AE645D /* Cadmus.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18C388482646A07A00AE645D /* PromiseKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C388402646A07500AE645D /* PromiseKit.xcframework */; };
+		18C388492646A07A00AE645D /* PromiseKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18C388402646A07500AE645D /* PromiseKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18EC3E56239397900031A849 /* MultipartFormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC3E55239397900031A849 /* MultipartFormItem.swift */; };
 		18EC3E59239397B40031A849 /* MultipartFormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC3E55239397900031A849 /* MultipartFormItem.swift */; };
 		7071AE2C216F39EF00622F11 /* HttpRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071AE2B216F39EF00622F11 /* HttpRequestBuilder.swift */; };
-		70C18EA721C3A0A2007F3826 /* Cadmus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C18EA621C3A0A2007F3826 /* Cadmus.framework */; };
 		70D17732216D9D05004C3733 /* HttpEngineCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 70D17730216D9D05004C3733 /* HttpEngineCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70D17739216D9D54004C3733 /* HttpEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D17738216D9D54004C3733 /* HttpEngine.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		18C388452646A07500AE645D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				18C388442646A07500AE645D /* PromiseKit.xcframework in Embed Frameworks */,
+				18C388422646A07500AE645D /* Cadmus.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C3884A2646A07A00AE645D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				18C388492646A07A00AE645D /* PromiseKit.xcframework in Embed Frameworks */,
+				18C388472646A07A00AE645D /* Cadmus.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		18336CCE237FEE480091FCB2 /* HttpEngineCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HttpEngineCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1837324C2516DB4E008025A5 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
-		183732522516DB56008025A5 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/Mac/PromiseKit.framework; sourceTree = "<group>"; };
-		184A32D9237FBB0F00D4A66C /* Hydra.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hydra.framework; path = Carthage/Build/watchOS/Hydra.framework; sourceTree = "<group>"; };
-		184A32DA237FBB0F00D4A66C /* Cadmus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cadmus.framework; path = Carthage/Build/watchOS/Cadmus.framework; sourceTree = "<group>"; };
-		184A32E0237FBB1800D4A66C /* Hydra.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hydra.framework; path = Carthage/Build/tvOS/Hydra.framework; sourceTree = "<group>"; };
-		184A32E1237FBB1800D4A66C /* Cadmus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cadmus.framework; path = Carthage/Build/tvOS/Cadmus.framework; sourceTree = "<group>"; };
-		184A32E7237FBB2C00D4A66C /* Hydra.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hydra.framework; path = Carthage/Build/Mac/Hydra.framework; sourceTree = "<group>"; };
-		184A32E8237FBB2C00D4A66C /* Cadmus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cadmus.framework; path = Carthage/Build/Mac/Cadmus.framework; sourceTree = "<group>"; };
 		187EC519238122DA0094E985 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		18C3883F2646A07500AE645D /* Cadmus.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Cadmus.xcframework; path = Carthage/Build/Cadmus.xcframework; sourceTree = "<group>"; };
+		18C388402646A07500AE645D /* PromiseKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PromiseKit.xcframework; path = Carthage/Build/PromiseKit.xcframework; sourceTree = "<group>"; };
 		18EC3E55239397900031A849 /* MultipartFormItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipartFormItem.swift; sourceTree = "<group>"; };
 		7071AE2B216F39EF00622F11 /* HttpRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestBuilder.swift; sourceTree = "<group>"; };
-		70C18EA621C3A0A2007F3826 /* Cadmus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cadmus.framework; path = Carthage/Build/iOS/Cadmus.framework; sourceTree = "<group>"; };
 		70D1772D216D9D05004C3733 /* HttpEngineCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HttpEngineCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70D17730216D9D05004C3733 /* HttpEngineCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpEngineCore.h; sourceTree = "<group>"; };
 		70D17731216D9D05004C3733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70D17738216D9D54004C3733 /* HttpEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpEngine.swift; sourceTree = "<group>"; };
-		70D1773B216D9DC6004C3733 /* Hydra.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hydra.framework; path = Carthage/Build/iOS/Hydra.framework; sourceTree = "<group>"; };
-		70D1773C216D9DC6004C3733 /* LogWrapperKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LogWrapperKit.framework; path = Carthage/Build/iOS/LogWrapperKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,8 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1852A8B0237FF0F30066B8A3 /* Cadmus.framework in Frameworks */,
-				183732532516DB56008025A5 /* PromiseKit.framework in Frameworks */,
+				18C388432646A07500AE645D /* PromiseKit.xcframework in Frameworks */,
+				18C388412646A07500AE645D /* Cadmus.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,8 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70C18EA721C3A0A2007F3826 /* Cadmus.framework in Frameworks */,
-				1837324D2516DB4E008025A5 /* PromiseKit.framework in Frameworks */,
+				18C388482646A07A00AE645D /* PromiseKit.xcframework in Frameworks */,
+				18C388462646A07A00AE645D /* Cadmus.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,17 +121,8 @@
 		70D1773A216D9DC6004C3733 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1837324C2516DB4E008025A5 /* PromiseKit.framework */,
-				183732522516DB56008025A5 /* PromiseKit.framework */,
-				70C18EA621C3A0A2007F3826 /* Cadmus.framework */,
-				184A32DA237FBB0F00D4A66C /* Cadmus.framework */,
-				184A32E1237FBB1800D4A66C /* Cadmus.framework */,
-				184A32E8237FBB2C00D4A66C /* Cadmus.framework */,
-				70D1773B216D9DC6004C3733 /* Hydra.framework */,
-				184A32D9237FBB0F00D4A66C /* Hydra.framework */,
-				184A32E0237FBB1800D4A66C /* Hydra.framework */,
-				184A32E7237FBB2C00D4A66C /* Hydra.framework */,
-				70D1773C216D9DC6004C3733 /* LogWrapperKit.framework */,
+				18C3883F2646A07500AE645D /* Cadmus.xcframework */,
+				18C388402646A07500AE645D /* PromiseKit.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -144,6 +157,7 @@
 				18336CCA237FEE480091FCB2 /* Sources */,
 				18336CCB237FEE480091FCB2 /* Frameworks */,
 				18336CCC237FEE480091FCB2 /* Resources */,
+				18C388452646A07500AE645D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,6 +176,7 @@
 				70D17729216D9D05004C3733 /* Sources */,
 				70D1772A216D9D05004C3733 /* Frameworks */,
 				70D1772B216D9D05004C3733 /* Resources */,
+				18C3884A2646A07A00AE645D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
