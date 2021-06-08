@@ -10,14 +10,12 @@
 		1852A8AD237FF0660066B8A3 /* HttpEngineCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 70D17730216D9D05004C3733 /* HttpEngineCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1852A8AE237FF0660066B8A3 /* HttpEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D17738216D9D54004C3733 /* HttpEngine.swift */; };
 		1852A8AF237FF0660066B8A3 /* HttpRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071AE2B216F39EF00622F11 /* HttpRequestBuilder.swift */; };
-		18C388412646A07500AE645D /* Cadmus.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C3883F2646A07500AE645D /* Cadmus.xcframework */; };
-		18C388422646A07500AE645D /* Cadmus.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18C3883F2646A07500AE645D /* Cadmus.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		18C388432646A07500AE645D /* PromiseKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C388402646A07500AE645D /* PromiseKit.xcframework */; };
-		18C388442646A07500AE645D /* PromiseKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18C388402646A07500AE645D /* PromiseKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		18C388462646A07A00AE645D /* Cadmus.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C3883F2646A07500AE645D /* Cadmus.xcframework */; };
-		18C388472646A07A00AE645D /* Cadmus.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18C3883F2646A07500AE645D /* Cadmus.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		18C388482646A07A00AE645D /* PromiseKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C388402646A07500AE645D /* PromiseKit.xcframework */; };
-		18C388492646A07A00AE645D /* PromiseKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18C388402646A07500AE645D /* PromiseKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18CE0AA7266F363500B64A35 /* Cadmus.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C3883F2646A07500AE645D /* Cadmus.xcframework */; };
+		18CE0AA8266F363500B64A35 /* Cadmus.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18C3883F2646A07500AE645D /* Cadmus.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18CE0AA9266F363500B64A35 /* PromiseKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C388402646A07500AE645D /* PromiseKit.xcframework */; };
+		18CE0AAA266F363500B64A35 /* PromiseKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18C388402646A07500AE645D /* PromiseKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18CE0AAC266F378700B64A35 /* Cadmus.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C3883F2646A07500AE645D /* Cadmus.xcframework */; };
+		18CE0AAF266F378900B64A35 /* PromiseKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C388402646A07500AE645D /* PromiseKit.xcframework */; };
 		18EC3E56239397900031A849 /* MultipartFormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC3E55239397900031A849 /* MultipartFormItem.swift */; };
 		18EC3E59239397B40031A849 /* MultipartFormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC3E55239397900031A849 /* MultipartFormItem.swift */; };
 		7071AE2C216F39EF00622F11 /* HttpRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071AE2B216F39EF00622F11 /* HttpRequestBuilder.swift */; };
@@ -26,26 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		18C388452646A07500AE645D /* Embed Frameworks */ = {
+		18CE0AAB266F363500B64A35 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				18C388442646A07500AE645D /* PromiseKit.xcframework in Embed Frameworks */,
-				18C388422646A07500AE645D /* Cadmus.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		18C3884A2646A07A00AE645D /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				18C388492646A07A00AE645D /* PromiseKit.xcframework in Embed Frameworks */,
-				18C388472646A07A00AE645D /* Cadmus.xcframework in Embed Frameworks */,
+				18CE0AAA266F363500B64A35 /* PromiseKit.xcframework in Embed Frameworks */,
+				18CE0AA8266F363500B64A35 /* Cadmus.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,8 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18C388432646A07500AE645D /* PromiseKit.xcframework in Frameworks */,
-				18C388412646A07500AE645D /* Cadmus.xcframework in Frameworks */,
+				18CE0AAF266F378900B64A35 /* PromiseKit.xcframework in Frameworks */,
+				18CE0AAC266F378700B64A35 /* Cadmus.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,8 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18C388482646A07A00AE645D /* PromiseKit.xcframework in Frameworks */,
-				18C388462646A07A00AE645D /* Cadmus.xcframework in Frameworks */,
+				18CE0AA9266F363500B64A35 /* PromiseKit.xcframework in Frameworks */,
+				18CE0AA7266F363500B64A35 /* Cadmus.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +143,6 @@
 				18336CCA237FEE480091FCB2 /* Sources */,
 				18336CCB237FEE480091FCB2 /* Frameworks */,
 				18336CCC237FEE480091FCB2 /* Resources */,
-				18C388452646A07500AE645D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -176,7 +161,7 @@
 				70D17729216D9D05004C3733 /* Sources */,
 				70D1772A216D9D05004C3733 /* Frameworks */,
 				70D1772B216D9D05004C3733 /* Resources */,
-				18C3884A2646A07A00AE645D /* Embed Frameworks */,
+				18CE0AAB266F363500B64A35 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,7 +178,7 @@
 		70D17724216D9D05004C3733 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = KaiZen;
 				TargetAttributes = {
 					18336CCD237FEE480091FCB2 = {
@@ -276,10 +261,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = HttpEngineCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -308,10 +290,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = HttpEngineCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -382,7 +361,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -441,7 +420,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -464,10 +443,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = HttpEngineCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -497,10 +473,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = HttpEngineCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
