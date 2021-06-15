@@ -11,9 +11,7 @@
 		1852A8AE237FF0660066B8A3 /* HttpEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D17738216D9D54004C3733 /* HttpEngine.swift */; };
 		1852A8AF237FF0660066B8A3 /* HttpRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071AE2B216F39EF00622F11 /* HttpRequestBuilder.swift */; };
 		18CE0AA7266F363500B64A35 /* Cadmus.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C3883F2646A07500AE645D /* Cadmus.xcframework */; };
-		18CE0AA8266F363500B64A35 /* Cadmus.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18C3883F2646A07500AE645D /* Cadmus.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18CE0AA9266F363500B64A35 /* PromiseKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C388402646A07500AE645D /* PromiseKit.xcframework */; };
-		18CE0AAA266F363500B64A35 /* PromiseKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18C388402646A07500AE645D /* PromiseKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18CE0AAC266F378700B64A35 /* Cadmus.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C3883F2646A07500AE645D /* Cadmus.xcframework */; };
 		18CE0AAF266F378900B64A35 /* PromiseKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C388402646A07500AE645D /* PromiseKit.xcframework */; };
 		18EC3E56239397900031A849 /* MultipartFormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC3E55239397900031A849 /* MultipartFormItem.swift */; };
@@ -22,21 +20,6 @@
 		70D17732216D9D05004C3733 /* HttpEngineCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 70D17730216D9D05004C3733 /* HttpEngineCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70D17739216D9D54004C3733 /* HttpEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D17738216D9D54004C3733 /* HttpEngine.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		18CE0AAB266F363500B64A35 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				18CE0AAA266F363500B64A35 /* PromiseKit.xcframework in Embed Frameworks */,
-				18CE0AA8266F363500B64A35 /* Cadmus.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		18336CCE237FEE480091FCB2 /* HttpEngineCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HttpEngineCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,7 +144,6 @@
 				70D17729216D9D05004C3733 /* Sources */,
 				70D1772A216D9D05004C3733 /* Frameworks */,
 				70D1772B216D9D05004C3733 /* Resources */,
-				18CE0AAB266F363500B64A35 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
