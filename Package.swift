@@ -19,7 +19,7 @@ let package = Package(
     ],
     dependencies: [
 			.package(url: "https://github.com/RustyKnight/Cadmus", Package.Dependency.Requirement.branch("feature/spm")),
-            .package(url: "https://github.com/mxcl/PromiseKit", from: "6.14.0")
+			.package(url: "https://github.com/mxcl/PromiseKit", .exact("6.14.0")),
     ],
     targets: [
 			.target(name: "HttpEngineCore",
