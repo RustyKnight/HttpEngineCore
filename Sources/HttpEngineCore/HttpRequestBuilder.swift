@@ -51,12 +51,12 @@ public protocol HttpRequestBuilder {
 open class BaseHttpRequestBuilder: HttpRequestBuilder {
   
   public let url: URL
-  public var headers: [String: String]?
-  public var credentials: Credentials?
-  public var progressMonitor: ProgressMonitor?
-  public var timeout: TimeInterval?
+  public private(set) var headers: [String: String]?
+  public private(set) var credentials: Credentials?
+  public private(set) var progressMonitor: ProgressMonitor?
+  public private(set) var timeout: TimeInterval?
   
-  private(set) var queryItems: [URLQueryItem] = []
+  public private(set) var queryItems: [URLQueryItem] = []
   
   public init(to: URL) {
     self.url = to
