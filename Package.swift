@@ -15,6 +15,7 @@ let package = Package(
     // Dependencies declare other packages that this package depends on.
     // .package(url: /* package url */, from: "1.0.0"),
     .package(url: "https://github.com/RustyKnight/Cadmus", .upToNextMajor(from: "3.0.0")),
+    .package(url: "https://github.com/mxcl/PromiseKit", .upToNextMajor(from: "6.0.0")),
   ],
   targets: [
     // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -22,7 +23,8 @@ let package = Package(
     .target(
       name: "HttpEngineCore",
       dependencies: [
-        "Cadmus"
+        "Cadmus",
+        "PromiseKit"
       ]),
   ]
 )
