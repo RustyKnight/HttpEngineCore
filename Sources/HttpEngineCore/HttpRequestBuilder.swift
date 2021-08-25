@@ -36,56 +36,70 @@ public protocol HttpRequestBuilder {
 	// Forced requirement
 	var url: URL { get }
 	
-	func with(parameters: [String: String]) -> Self
+//	func with(parameters: [String: String]) -> Self
 	func with(headers: [String: String]) -> Self
 	func with(credentials: Credentials) -> Self
 	func with(progressMonitor: @escaping ProgressMonitor) -> Self
 	func with(timeout: TimeInterval) -> Self
 	
+  func with(queryNamed name: String, value: String) -> Self
+  func with(queryItem: URLQueryItem) -> Self
+  
 	func build() throws -> HttpEngine
 }
 
 open class BaseHttpRequestBuilder: HttpRequestBuilder {
-	
-	public let url: URL
-	public var parameters: [String: String]?
-	public var headers: [String: String]?
-	public var credentials: Credentials?
-	public var progressMonitor: ProgressMonitor?
-	public var timeout: TimeInterval?
-	
-	public init(to: URL) {
-		self.url = to
-	}
-	
-	public func with(parameters: [String : String]) -> Self {
-		self.parameters = parameters
-		return self
-	}
-	
-	public func with(headers: [String : String]) -> Self {
-		self.headers = headers
-		return self
-	}
-	
-	public func with(credentials: Credentials) -> Self {
-		self.credentials = credentials
-		return self
-	}
-	
-	public func with(progressMonitor: @escaping ProgressMonitor) -> Self {
-		self.progressMonitor = progressMonitor
-		return self
-	}
-	
-	public func with(timeout: TimeInterval) -> Self {
-		self.timeout = timeout
-		return self
-	}
-	
-	open func build() throws -> HttpEngine {
-		fatalError("Not yet implemented")
-	}
-	
-	
+  
+  public let url: URL
+  public var headers: [String: String]?
+  public var credentials: Credentials?
+  public var progressMonitor: ProgressMonitor?
+  public var timeout: TimeInterval?
+  
+  private(set) var queryItems: [URLQueryItem] = []
+  
+  public init(to: URL) {
+    self.url = to
+  }
+  
+  @discardableResult
+  public func with(queryNamed name: String, value: String) -> Self {
+    return with(queryItem: URLQueryItem(name: name,
+                                        value: value.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)))
+  }
+  
+  @discardableResult
+  public func with(queryItem: URLQueryItem) -> Self {
+    queryItems.append(queryItem)
+    return self
+  }
+
+  @discardableResult
+  public func with(headers: [String : String]) -> Self {
+    self.headers = headers
+    return self
+  }
+  
+  @discardableResult
+  public func with(credentials: Credentials) -> Self {
+    self.credentials = credentials
+    return self
+  }
+  
+  @discardableResult
+  public func with(progressMonitor: @escaping ProgressMonitor) -> Self {
+    self.progressMonitor = progressMonitor
+    return self
+  }
+  
+  @discardableResult
+  public func with(timeout: TimeInterval) -> Self {
+    self.timeout = timeout
+    return self
+  }
+  
+  open func build() throws -> HttpEngine {
+    fatalError("Not yet implemented")
+  }
+
 }
