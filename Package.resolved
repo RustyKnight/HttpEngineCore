@@ -5,18 +5,18 @@
         "package": "Cadmus",
         "repositoryURL": "https://github.com/RustyKnight/Cadmus",
         "state": {
-          "branch": "feature/spm",
-          "revision": "8b03dc9cb12f6e1b1639eb7f70ec8c3d37e01f22",
-          "version": null
+          "branch": null,
+          "revision": "b674faa643a259f9380c0e4f9687f1e841e74581",
+          "version": "2.0.0"
         }
       },
       {
-        "package": "Hydra",
-        "repositoryURL": "https://github.com/malcommac/Hydra.git",
+        "package": "PromiseKit",
+        "repositoryURL": "https://github.com/mxcl/PromiseKit",
         "state": {
           "branch": null,
-          "revision": "fe3e82646f0de8500a730348fd13bfa7e7058648",
-          "version": "2.0.2"
+          "revision": "cf94b87e50e6c21bf42887e3474a2785f1049591",
+          "version": "6.14.0"
         }
       }
     ]
