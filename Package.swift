@@ -23,7 +23,10 @@ let package = Package(
   ],
   targets: [
     .target(name: "HttpEngineCore",
-            dependencies: ["Cadmus", "PromiseKit"],
+            dependencies: [
+              "Cadmus", 
+              "PromiseKit"
+            ],
             path: "HttpEngineCore"),
   ]
 )
